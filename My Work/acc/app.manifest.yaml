@@ -1,0 +1,24 @@
+slug: data-specialops-avant_credit_card_autopay
+title: Data SpecialOps - Avant - Credit Card Autopay Email
+authors: Qiaowei Jiang (qiaowei.jiang@avant.com)
+description:
+  Sends emails to current or cycle 1 customers 14 days prior to the payment due date
+entry: app.py
+language: python3
+category: collections
+node: large
+
+# schedule: '00 12 * * * America/Chicago'
+
+
+timeout: 28800
+
+inputs:
+  - key: is_dry_run
+    type: boolean
+    default: False
+
+outputs:
+  - key: dry_run_output
+    type: file
+

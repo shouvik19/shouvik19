@@ -1,0 +1,6 @@
+datalaketools
+yamlloader
+pandas
+python-gnupg
+avant_python_utils
+datalakeutils==25.1.1
